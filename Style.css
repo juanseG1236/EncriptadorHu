@@ -1,0 +1,258 @@
+*{
+    font-family: 'Inter', sans-serif;
+    
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #F7F3ED;
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    gap: 7rem;
+
+}
+
+/*///////////////// Ingreso de tetxo /////////////////////*/
+
+#square1 {
+    margin-top: 4%;
+    align-self: flex-start;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    width: 25%;
+    height: 75%;
+    box-sizing: border-box; /* El padding se incluirá dentro del tamaño especificado */
+    padding: 10px 20px; /* Puedes ajustar el valor del padding según tus necesidades */
+
+}
+
+
+
+
+#aviso{
+    display: flex;
+    gap: 0.5rem;
+}
+
+#aviso p{
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 0.8rem;
+}
+
+#ingreso{
+    width:100%;
+    height: 70%;
+    box-sizing: border-box;
+    margin-bottom: 3%;
+
+
+}
+#ingreso textarea{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    resize: none;
+    border: none;
+    box-sizing: border-box;
+    font-size: large;
+    outline: none;
+
+
+
+}
+
+#ingreso textarea::placeholder{
+    color: #AC1818;
+    font-size: x-large;
+}
+
+
+/* boton desincriptar */
+
+.boton{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: solid 1px #E5E5E5;
+    margin-left: -20px; /* Aplica un margen negativo igual al padding horizontal del padre */
+    padding-right: 20px; /* Añade un padding derecho igual al padding horizontal del padre */
+    margin-right: -20px; /* Aplica un margen negativo igual al padding horizontal del padre */
+    padding-left: 20px; /* Añade un padding derecho igual al padding horizontal del padre */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.botonC{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    transition: 100ms ease all;
+    cursor: pointer;
+
+}
+
+
+
+.botonC:hover{
+    transform: scale(1.1)
+    
+}
+
+
+
+.circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.circle img {
+    width: 75%;
+}
+
+#desincriptar .circle {
+    background-color: #2C2022;
+
+}
+
+#encriptar .circle {
+    background-color: #C12F2E;
+
+}
+
+/*///////////////// Salida de tetxo /////////////////////*/
+
+
+    #square2 {
+        align-self: flex-end;
+        height: 75%;
+        width: 25%;
+        background: #2C2022;
+        box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+        margin-bottom: 4%;
+        box-sizing: border-box; /* El padding se incluirá dentro del tamaño especificado */
+        padding: 13px 20px; /* Puedes ajustar el valor del padding según tus necesidades */
+
+        /* interno */
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    
+    }
+
+
+    #square2 img{
+        width: 80%; 
+        /* width: 30%; */
+        height: auto;
+        margin-top: 7%;
+        /*margin-top: 3%;*/
+    }
+
+    #square2 #mensaje1 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.7rem;
+        line-height: 120%;
+        text-align: center;
+        color: #E9ECF8;
+        margin-top: 10%;
+        margin-bottom: 0;
+
+        
+
+    }
+
+    #square2 #mensaje2 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 150%;        
+        text-align: center;    
+        color: #E9ECF8;
+        
+        
+
+    }
+
+
+
+    
+    #texto2 {
+        margin-top: 5% !important; 
+        width: 100%;
+        height: 65%;
+        padding: 10px;
+        resize: none;
+        border: none;
+        box-sizing: border-box;
+        font-size: large;
+        color: #E9ECF8;
+        outline: none;
+        word-wrap:break-word;
+        overflow-y: auto;
+    }
+
+    #texto2::-webkit-scrollbar {
+        width: 10px; /* Ancho del scroll */
+      }
+      
+      #texto2::-webkit-scrollbar-track {
+        background-color: #33282a; /* Color del fondo del track */
+        border-radius: 5px; /* Radio de las esquinas del thumb */
+
+      }
+      
+      #texto2::-webkit-scrollbar-thumb {
+        background-color: #888; /* Color del thumb (barra de desplazamiento) */
+        border-radius: 5px; /* Radio de las esquinas del thumb */
+      }
+
+    #btnCopy .circle{
+        background-color: #C12F2E;
+    }
+    #btnCopy p{
+        color: #F7F3ED;
+    }
+
+    #copiar{
+        border-top: solid 1px #383333 ;
+        
+    }
+
+     #btnCopy img{
+        scale: 0.7;
+        
+        margin: 0;
+    }
+
+
+    #logo{
+      width: 5%; 
+      position: absolute;
+      right: 4%;
+      top: 4%;
+    }
+
+    
+
+    
