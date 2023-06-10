@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         encryptedText[i + 4] === "r"
       ) {
         decryptedText.push("e");
+        i += 4
       } else if (
         char === "i" &&
         encryptedText[i + 1] === "m" &&
